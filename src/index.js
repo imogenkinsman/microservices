@@ -10,7 +10,7 @@ if (!process.env.PORT) {
 const port = process.env.PORT;
 
 app.get('/video', (req, res) => {
-  const path = 'video.mp4';
+  const path = 'videos/video.mp4';
   fs.stat(path, (err, stats) => {
     if (err) {
       console.error(':( :( :(');
